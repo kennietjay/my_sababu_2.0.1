@@ -10,6 +10,7 @@ import EventSignup from "../components/EventSignup";
 // import Button from "../components/Button";
 import { Alert } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const Events = ({
   onSuccess,
@@ -135,9 +136,9 @@ const Events = ({
                           Sign up
                         </Button> */}
 
-                        <NavLink to="/contacts#top" className="ctaLink">
+                        <HashLink to="/contacts#top" className="ctaLink">
                           Sign up
-                        </NavLink>
+                        </HashLink>
                       </div>
                     </div>
                   </div>
