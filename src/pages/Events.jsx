@@ -9,6 +9,7 @@ import {
 import EventSignup from "../components/EventSignup";
 import Button from "../components/Button";
 import { Alert } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
 
 const Events = ({
   onSuccess,
@@ -127,12 +128,16 @@ const Events = ({
                         )}
                       </div>
                       <div className={styles.organizer}>
-                        <Button
+                        {/* <Button
                           onClick={() => handleOpenModal(post.id)}
                           type="primary"
                         >
                           Sign up
-                        </Button>
+                        </Button> */}
+
+                        <NavLink to="/contacts" className="ctaLink">
+                          Sign up
+                        </NavLink>
                       </div>
                     </div>
                   </div>
