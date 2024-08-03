@@ -1,0 +1,72 @@
+/* FormHandler.module.css */
+
+.formHandler {
+  /* Styles for the main form handler page */
+}
+
+.hero {
+  background: url("/images/form-hero.jpg");
+  padding-top: 4.8rem;
+  background-color: var(--color-brand--3);
+  background-size: cover;
+  background-position: center;
+  aspect-ratio: 100%;
+  width: 100%;
+  height: 65vh;
+  position: relative;
+}
+
+.heroContent {
+  background-color: #fff;
+  max-width: 60rem;
+  color: inherit;
+  padding: 2.4rem;
+  text-align: center;
+  position: absolute;
+  border-radius: 2rem;
+  bottom: 6.4rem;
+  left: 6.4rem;
+  right: 6.4rem;
+}
+
+.heroContent h1,
+.heroContent p {
+  font-weight: 700;
+}
+
+.formSection {
+  bottom: 0;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  padding: 2.4rem;
+  max-width: 40rem;
+  box-shadow: 0 1rem 2.4rem 1.4rem rgb(0, 0, 0, 0.1);
+  border-radius: 2rem;
+  margin: 2rem auto;
+  background-color: #fff;
+}
+
+.uploadContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.btnPrimary {
+  background-color: #007bff;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.btnPrimary:hover {
+  background-color: #0056b3;
+}

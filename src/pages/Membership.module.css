@@ -1,0 +1,527 @@
+.newMembership {
+  position: relative;
+  line-height: 1.4;
+}
+
+/*  */
+.headerSection {
+  gap: 2.4rem;
+  padding: 6.4rem 0;
+  @media (max-width: 50rem) {
+    padding: 2.4rem;
+  }
+}
+
+.headerSection h2 {
+  margin-bottom: 2.4rem;
+}
+
+.header {
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+/*  */
+.membershipEligibiltyContainer {
+  border-top: 3rem solid #e2e7ed;
+}
+
+.membershipElgibility {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  gap: 2.4rem;
+  padding: 6.4rem;
+  @media (max-width: 50rem) {
+    padding: 2.4rem;
+  }
+}
+
+.membershipElgibility .eligibiltyCategories {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4.8rem;
+  @media (max-width: 45rem) {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*  */
+.eligibilityCategory {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  justify-content: center;
+  align-items: center;
+  padding: 2.4rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0rem 0.8rem 2.4rem;
+  border-radius: 2rem;
+}
+
+.eligibilityCategory i {
+  font-size: 4.2rem;
+  color: var(--color-brand--3);
+}
+
+.eligibilityCategory div {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*  */
+.joinReasonContainer {
+  background-color: #cec0ad;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  @media screen and (max-width: 64rem) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.whyJoin {
+  color: #3b2c18;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 6.4rem;
+  font-size: 2rem;
+  @media (max-width: 40rem) {
+    padding: 2.4rem;
+    font-size: 1.8rem;
+  }
+}
+
+.whyJoin h2 {
+  color: #3b2c18 !important;
+}
+.whyJoin p {
+  padding: 0 2.4rem;
+
+  @media screen and (max-width: 40rem) {
+    padding: 1.4rem;
+  }
+}
+
+.clipArtImg {
+  clip-path: polygon(
+    0% 15%,
+    15% 15%,
+    15% 0%,
+    85% 0%,
+    85% 15%,
+    100% 15%,
+    100% 85%,
+    85% 85%,
+    85% 100%,
+    15% 100%,
+    15% 85%,
+    0% 85%
+  );
+  padding: 0;
+  margin: 0;
+}
+
+.clipArtImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*  */
+.requiredTool {
+  padding: 6.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  @media (max-width: 40rem) {
+    padding: 6.4rem 2.4rem;
+  }
+}
+
+.requiredTooContent {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 6.4rem;
+  justify-content: center;
+  align-items: center;
+  @media (max-width: 40rem) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.requiredTooContent div ul {
+  list-style: none;
+  padding-top: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  padding-left: 0;
+}
+.requiredTooContent div ul li::before {
+  content: "✓";
+  margin-right: 1rem;
+  color: var(--color-brand--3);
+  font-size: 2rem;
+}
+
+.requiredTooContent .requiredTooIcons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-brand--3);
+  font-size: 16rem;
+}
+
+/* Member type styles */
+.membershipTypeContainer {
+  background-color: #efefef;
+}
+
+.membershipTypeSection {
+  padding: 6.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  @media (max-width: 40rem) {
+    padding: 2.4rem;
+  }
+}
+
+.membershipTypes {
+  padding-left: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.4rem;
+  @media (max-width: 80rem) {
+    grid-template-columns: 1fr;
+  }
+  @media (max-width: 62rem) {
+    grid-template-columns: 1fr;
+  }
+  @media (max-width: 45rem) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.membershipTypes a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.membershipTypes a:hover,
+.membershipTypes a:active {
+  cursor: pointer;
+  border: 0.1 solid var(--color-brand--1);
+}
+
+.membershipType {
+  padding: 1.2rem 2.4rem;
+  border-radius: 1rem;
+  border: 0.01rem solid var(--color-brand--4);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4.8rem;
+  @media screen and (max-width: 40rem) {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto auto;
+    gap: 2.4rem;
+  }
+}
+
+.membershipType .recommended {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: 600;
+  font-size: 2rem;
+  border-radius: 0.5rem;
+  height: 5rem;
+}
+
+.membershipType .recommended.family {
+  background-color: var(--color-brand--1);
+}
+
+.membershipBtnContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.membershipBtnContainer a {
+  margin-top: 2.4rem;
+  color: inherit;
+  text-decoration: none;
+}
+
+.membershipBtnContainer a.btn {
+  background-color: var(--color-brand--4);
+  padding: 1rem 2.4rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.membershipType .membershipBtn {
+  background-color: var(--color-brand--4);
+  color: #fff;
+  font-weight: 600;
+  padding: 1rem 6.4rem;
+  border-radius: 0.5rem;
+  margin: 0 auto;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.membershipType .membershipBtn:hover {
+  background-color: #586e82;
+}
+
+.membershipType div h1 {
+  font-weight: 600;
+  text-align: center;
+  padding: 1.6rem;
+}
+
+.membershipType .requirementList {
+  padding-top: 2.4rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.membershipType .requirementList .requirementSubList {
+  padding: 1.2rem 3.2rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.membershipType .requirementList li::before {
+  content: "✓";
+  margin-right: 1rem;
+}
+
+.membershipType .requirementList .listException::before {
+  content: "𝖷";
+  margin-right: 1rem;
+  color: var(--color-brand--3);
+}
+
+.membershipTypePayment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.membershipTypePayment .basePay {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  font-size: 3.2rem;
+}
+
+.membershipTypePayment span {
+  font-size: 1.2rem;
+}
+
+/*  */
+.dependentRateContainer {
+  border-top: 1rem solid var(--color-brand--2);
+}
+.dependentRate {
+  padding: 6.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  box-shadow: 1rem 0.5rem 4.8rem 1.4rem rgb(0, 0, 0, 0.1);
+  @media screen and (max-width: 40rem) {
+    padding: 2.4rem;
+  }
+}
+
+/* Popup */
+.label {
+  display: inline-flex;
+}
+.label i {
+  font-size: 1.4rem;
+}
+
+.howItWorks .content {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.steps li .downloadLink {
+  margin-top: 1rem;
+  padding: 0.4rem 1rem;
+  text-decoration: none;
+  box-shadow: 0px 0px 1px 0px rgb(88, 110, 130, 0.5);
+  border-radius: 0.5rem;
+}
+
+@media screen and (max-width: 50rem) {
+  .steps {
+    grid-template-columns: 1fr;
+  }
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.stepList {
+  list-style: square;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  line-height: 1.4;
+}
+
+.step i:global(.fa-regular) {
+  font-size: 3.2rem;
+  padding-bottom: 2rem;
+  color: var(--color-brand--3);
+}
+
+.howItWorks .membershipBtn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.howItWorks .membershipBtn a {
+  text-decoration: none;
+}
+
+/* Application Steps */
+.applicationSteps {
+  padding: 2.4rem;
+  border-radius: 2rem;
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #cec0ad 100%);
+}
+
+.applicationSteps h3 {
+  font-size: clamp(1rem, 8vmin, 3rem);
+  font-family: sans-serif;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 2.4rem;
+}
+
+.underlined {
+  /*   background: red; */
+  position: relative;
+}
+
+.underlineMask:after {
+  content: "";
+  position: absolute;
+  top: 95%;
+  width: 120%;
+  aspect-ratio: 3 / 1;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-radius: 50%;
+  border: 6px solid hsl(280 80% 50%);
+  /* Use a conic gradient mask to hide and show the bits you want */
+  --spread: 140deg;
+  --start: 290deg;
+  mask: conic-gradient(
+    from var(--start),
+    white 0 var(--spread),
+    transparent var(--spread)
+  );
+}
+
+.underlineOverflow {
+  display: inline-block;
+  /* A little extra padding and overflow hidden   */
+  overflow: hidden;
+  padding-bottom: clamp(1rem, 1vmin, 1rem);
+}
+.underlineOverflow:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  height: 120%;
+  aspect-ratio: 2.5 / 1;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  border-radius: 50%;
+  border: 6px solid hsl(10 80% 50%);
+}
+
+.underlineClip:after {
+  content: "";
+  position: absolute;
+  top: 95%;
+  width: 120%;
+  aspect-ratio: 3 / 1;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-radius: 50%;
+  border: 6px solid hsl(130 80% 50%);
+  /* Use a clip-path to hide and show the bits you want */
+  clip-path: polygon(0 0, 50% 50%, 100% 0);
+}
+
+.applicationSteps .applicationStepsList {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding-left: 0;
+  gap: 1rem;
+  @media screen and (max-width: 40rem) {
+    font-size: 1.6rem;
+  }
+}
+
+.download {
+  display: inline-flex;
+}
+
+.applicationSteps .applicationStepsList li {
+  display: grid;
+  grid-template-columns: 2rem 1fr;
+}
+
+.insideListContainer div {
+  display: grid;
+  grid-template-rows: auto;
+  font-size: 1.4rem;
+  font-style: italic;
+}
+
+.applicationStepsList li div p a:link,
+.applicationStepsList li div p a:visited {
+  text-decoration: none;
+}

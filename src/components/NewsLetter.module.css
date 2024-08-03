@@ -1,0 +1,41 @@
+.newsLetterContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2.4rem;
+  background-color: var(--color-brand--5);
+  border-top-right-radius: 4rem;
+  border-bottom-left-radius: 4rem;
+  border-bottom-right-radius: 4rem;
+  padding: 2.4rem;
+}
+
+.newsLetter {
+  gap: 6.4rem;
+}
+
+.newsLetter form .alertBox {
+  max-width: 40rem;
+  width: 100%;
+}
+
+.inputControl div input {
+  width: 35rem;
+}
+
+.btnSubscribe {
+  padding-top: 2.8rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .inputContent {
+    display: flex;
+    gap: 2.4rem;
+    align-items: center;
+  }
+
+  .newsLetter form .alertBox {
+    max-width: 36rem;
+    width: 100%;
+  }
+}

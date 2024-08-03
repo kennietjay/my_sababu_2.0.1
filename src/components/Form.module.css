@@ -1,0 +1,132 @@
+/* Edit Profile and Sign up */
+.modalContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  border-radius: 2rem;
+  border: 0.11rem solid var(--color-brand--1);
+}
+
+.modal {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+}
+
+.modalForm h2 {
+  font-weight: 600;
+  font-size: 2.4rem;
+}
+
+.modalForm {
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  padding: 1.4rem;
+  width: 50rem;
+  @media screen and (max-width: 40rem) {
+    width: 35rem;
+  }
+}
+
+.formInputLayout.twoCol {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.formInputLayout.twoEqualCol {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.formInputLayout.threeCol {
+  display: grid;
+  grid-template-columns: 2.3fr 0.7fr 1fr;
+  gap: 2.4rem;
+}
+
+.formInputLayout.threeEqualCol {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2.4rem;
+}
+
+.inputFields {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.modalForm .inputControl {
+  display: flex;
+  flex-direction: column;
+}
+
+.modalForm .inputControl label {
+  text-align: left;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.modalForm input {
+  font-size: 1.6rem;
+  border: 0.1rem solid #ccc;
+  border-radius: 0.4rem;
+}
+
+.modalForm button {
+  background-color: var(--color-brand--1);
+  border: none;
+  border-radius: 0.4rem;
+  padding: 1.6rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modalCloseBtn {
+  font-size: 2rem;
+  background-color: inherit;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.modalCloseBtn i {
+  color: var(--color-brand--3);
+}
+
+.submit {
+  margin-top: 4.8rem;
+}
+
+.modalForm button:hover {
+  background-color: var(--color-brand--2);
+  color: #faf1e8;
+}
+
+@media screen and (max-width: 40rem) {
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+  }
+}

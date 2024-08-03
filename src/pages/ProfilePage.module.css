@@ -1,0 +1,91 @@
+/*  */
+.profilePage {
+  font-size: 1.6rem;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 2.4rem;
+}
+
+.navContent {
+  height: 100vh;
+  overflow: scroll;
+  padding: 0;
+  margin: 0;
+}
+
+/*  */
+@media screen and (max-width: 64rem) {
+  .profilePage .tabNavigation {
+    width: 18rem;
+  }
+}
+
+/* Media query */
+@media screen and (max-width: 56rem) {
+  .profilePage {
+    grid-template-columns: 1fr;
+  }
+
+  .profilePage .navContainer {
+    font-size: 1.6rem;
+    grid-row: 2;
+    width: 100%;
+    position: fixed;
+    height: 8rem;
+    box-shadow: 0 -0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+    z-index: 99;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 40rem) {
+  .profilePage {
+    font-size: 1.4rem;
+  }
+}
+
+/* 
+=============================================================
+*/
+.container {
+  padding: 0 6.4rem;
+  margin: 0 auto;
+  @media screen and (min-width: 1440px) {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}
+
+/*  */
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+  .container {
+    padding: 0 6.4rem;
+  }
+}
+
+@media only screen and (min-width: 540px) and (max-width: 768px) {
+  /* styles for mobile browsers smaller than 480px; (iPhone) */
+  .container {
+    padding: 0 4.8rem;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 540px) {
+  /* styles for mobile browsers smaller than 480px; (iPhone) */
+  .container {
+    padding: 0 2.4rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* styles for mobile browsers smaller than 480px; (iPhone) */
+  .container {
+    padding: 0 2.4rem;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  /*  */
+}

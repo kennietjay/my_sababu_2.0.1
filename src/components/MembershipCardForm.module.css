@@ -1,0 +1,155 @@
+/* Edit Profile and Sign up */
+.signupForm {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  padding: 2.4rem 1.6rem;
+  position: relative;
+  @media screen and (max-width: 40rem) {
+    gap: 1rem;
+  }
+}
+
+.grid {
+  display: grid;
+  gap: 1.6rem;
+}
+
+.grid.gridCols2 {
+  grid-template-columns: repeat(2, 1fr);
+  @media screen and (max-width: 40rem) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.grid.gridCols3 {
+  grid-template-columns: repeat(3, 1fr);
+  @media screen and (max-width: 40rem) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.grid.gridCols2.oneSmall {
+  grid-template-columns: 4fr 1fr;
+}
+
+.grid.gridCols3.twoSmall {
+  grid-template-columns: 1fr;
+}
+
+.signupForm h2 {
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 2.4rem;
+  border-radius: 0.5rem;
+}
+
+.signupForm form .inputControl label {
+  text-align: left;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+/* .signupForm input,
+.signupForm select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 1px solid #ccc;
+  padding: 0.5em 1em;
+  font-size: 1em;
+  background-color: #fff;
+  color: #333;
+  border-radius: 4px;
+  cursor: pointer;
+
+  padding-right: 2.5em;
+
+  @media screen and (max-width: 40rem) {
+    gap: 1rem;
+    padding: 1rem 0.8rem;
+  }
+} */
+
+.signupForm button {
+  background-color: var(--color-brand--1);
+  border: none;
+  border-radius: 0.4rem;
+  padding: 0.8rem 1.6rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: #fff;
+  font-weight: 600;
+}
+
+.signupForm .submitBtn:hover {
+  background-color: var(--color-brand--12);
+  color: #faf1e8;
+}
+
+.submitBtn {
+  max-width: 10rem;
+  margin: 1.6rem auto;
+}
+
+.signupForm .closeBtn {
+  color: #000;
+  background-color: #fff;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+@media screen and (max-width: 40rem) {
+  /* Edit Profile and Sign up */
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+  }
+}
+
+.signupForm input,
+.signupForm select {
+  background: #fff; /* Ensure background color is set to match your design */
+  border: 1px solid #ccc;
+  padding: 0.5em 1em;
+  font-size: 1em;
+  color: #333;
+  border-radius: 4px;
+  cursor: pointer;
+  box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+/* Specific styles for select */
+.signupForm select {
+  background: url("path-to-your-custom-arrow.svg") no-repeat right 0.5em center; /* Adjust position as needed */
+  background-size: 1em; /* Adjust size as needed */
+  -webkit-appearance: none; /* Hide default arrow in WebKit browsers */
+  -moz-appearance: none; /* Hide default arrow in Firefox */
+  appearance: none; /* Hide default arrow in modern browsers */
+  padding-right: 2.5em; /* Adjust padding to accommodate custom arrow */
+}
+
+/* Optional: Style for input fields */
+.signupForm input {
+  background: none; /* Remove any custom background if not needed */
+  padding-right: 1em; /* Adjust padding if needed */
+}
+
+/* Responsive design adjustments */
+@media screen and (max-width: 40rem) {
+  .signupForm input,
+  .signupForm select {
+    gap: 1rem;
+    padding: 1rem 0.8rem;
+  }
+}

@@ -1,0 +1,65 @@
+.contactOptions {
+  padding-top: 2.4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #fafafa;
+  @media screen and (min-width: 1440px) {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}
+
+.contactDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2.4rem;
+}
+
+.contactDetails .address,
+.contactDetails .phone,
+.contactDetails .email {
+  display: flex;
+  gap: 2.4rem;
+  align-items: center;
+}
+
+.contactDetails .address div p,
+.contactDetails .phone div p,
+.contactDetails .email div p {
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
+}
+
+.contactDetails .address div span,
+.contactDetails .phone div span,
+.contactDetails .email div span {
+  font-size: 1.4rem;
+}
+
+.contactDetails .address i:global(.fa-solid),
+.contactDetails .phone i:global(.fa-solid),
+.contactDetails .email i:global(.fa-regular) {
+  font-size: 3.2rem;
+  color: var(--color-brand--3);
+}
+
+.googleMap {
+  padding: 4.8rem 0;
+}
+
+.volunteerPitch {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 65%;
+  padding-bottom: 2.4rem;
+  font-size: 1.8rem;
+}
+
+@media only screen and (max-width: 960px) {
+  .contactOptions {
+    grid-template-columns: 1fr;
+  }
+}

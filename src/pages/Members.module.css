@@ -1,0 +1,111 @@
+/* Members.module.css */
+.membersContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin-bottom: 4.8rem; */
+  padding: 2.4rem 0 6.4rem;
+}
+
+.profileHeader {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.memberPageHeader {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.btnConntainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.household {
+  display: grid;
+  width: 100%;
+}
+
+.allMembers {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 2rem;
+}
+
+.memberList {
+  text-decoration: none;
+  color: inherit;
+}
+
+.member {
+  background-color: #f4f4f4;
+  padding: 2rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.6rem;
+  align-items: center;
+  height: 100%;
+  position: relative;
+}
+
+.addressContent {
+  font-size: 1.4rem;
+}
+
+.modal {
+  /* Add modal styles here */
+}
+
+.modalHeader {
+  /* Add modal header styles here */
+}
+
+.modalCloseBtn {
+  /* Add modal close button styles here */
+}
+
+.modalOverlay {
+  /* Add modal overlay styles here */
+}
+
+.modalContent {
+  /* Add modal content styles here */
+}
+
+.single,
+.retired,
+.family,
+.singleFamily {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  color: white;
+}
+
+.single {
+  color: #2faa75;
+  border-bottom: 0.1rem solid #2faa75;
+}
+
+.retired {
+  color: #b8860b;
+  border-bottom: 0.1rem solid #b8860b;
+}
+
+.family {
+  color: #ac255e;
+  border-bottom: 0.1rem solid #ac255e;
+}
+
+.singleFamily {
+  color: #008bf8;
+  border-bottom: 0.1rem solid #008bf8;
+}

@@ -1,0 +1,85 @@
+/*  */
+.tableContainer {
+  width: 100%;
+  overflow-x: auto;
+  margin: 2rem 0;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 0.5rem;
+  border: 0.1rem solid #ddd;
+  text-align: left;
+  word-wrap: break-word; /* Ensures long words break and wrap onto the next line */
+  white-space: normal;
+}
+
+.table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.actionColumn {
+  text-align: center;
+  padding: 1rem;
+}
+
+.actionColumn button {
+  background-color: #fff;
+  text-align: center;
+}
+
+.actionColumn i {
+  font-size: 1rem;
+  cursor: pointer;
+  color: #777;
+}
+
+.noData {
+  text-align: center;
+  color: #999;
+  font-style: italic;
+}
+
+/* @media screen and (max-width: 768px) {
+  .table thead {
+    display: none;
+  }
+
+  .table,
+  .table tbody,
+  .table tr,
+  .table td {
+    display: block;
+    width: 100%;
+  }
+
+  .table tr {
+    margin-bottom: 15px;
+  }
+
+  .table td {
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+  }
+
+  .table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 15px;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  .actionColumn {
+    text-align: right;
+  }
+} */

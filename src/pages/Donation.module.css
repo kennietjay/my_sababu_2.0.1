@@ -1,0 +1,106 @@
+/* Donation.module.css */
+
+.donation {
+  /* Styles for the main donation page */
+  font-size: 1.8rem;
+}
+
+.hero {
+  background: url("/images/sb-donate.jpg");
+  padding-top: 4.8rem;
+  background-color: var(--color-brand--3);
+  background-size: cover;
+  background-position: center;
+  aspect-ratio: 100%;
+  width: 100%;
+  height: 65vh;
+  position: relative;
+}
+
+.heroContent {
+  background-color: #fff;
+  max-width: 60rem;
+  color: inherit;
+  padding: 2.4rem;
+  text-align: center;
+  position: absolute;
+  border-radius: 2rem;
+  bottom: 6.4rem;
+  left: 6.4rem;
+  right: 6.4rem;
+}
+
+.heroContent h1,
+.heroContent p {
+  font-weight: 700;
+}
+
+.donationContainer {
+  bottom: 0;
+  margin: 0 auto;
+}
+
+.donationContainer form {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  padding: 2.4rem;
+  max-width: 60rem;
+  box-shadow: 0 1rem 2.4rem 1.4rem rgb(0, 0, 0, 0.1);
+  border-radius: 2rem;
+}
+
+.formGroup {
+  margin-bottom: 1rem;
+}
+
+.paymentOptions {
+  margin-top: 4.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.paymentOption {
+  display: grid;
+  grid-template-columns: 5rem 1fr;
+  @media screen and (max-width: 40rem) {
+    grid-template-columns: 10rem 1fr;
+  }
+}
+
+.paymentOption label {
+  display: grid;
+  grid-template-columns: 0.1rem 1fr;
+}
+
+.amountOptions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.amountButton {
+  margin-top: 1rem;
+  padding: 0.5rem 1.4rem;
+  border-radius: 1rem;
+  background-color: var(--color-brand--1);
+  cursor: pointer;
+  color: var(--color-text--1);
+}
+
+.amountButton.selected {
+  background-color: var(--color-brand--3);
+}
+
+.customAmountInput {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.paymentDetails,
+.inKindDonations {
+  margin-top: 2rem;
+}

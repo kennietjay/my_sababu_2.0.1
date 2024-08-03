@@ -1,0 +1,31 @@
+.dataForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  @media screen and (max-width: 40rem) {
+    max-width: 32rem;
+    margin: 0 auto;
+  }
+}
+
+.profileActions {
+  display: flex;
+  justify-content: end;
+  gap: 2.4rem;
+}
+
+.profileActions button {
+  font-size: 1.4rem;
+  width: 6rem;
+  border-radius: 0.5rem;
+  border: 0.01rem solid var(--color-brand--1);
+}
+
+.saveBtn {
+  background-color: var(--color-brand--1);
+  color: #fff;
+}
+
+.cancelBtn {
+  background-color: #fbfbfb;
+}

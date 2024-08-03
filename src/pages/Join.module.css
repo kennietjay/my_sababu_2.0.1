@@ -1,0 +1,63 @@
+/* Join.module.css */
+.pageLayout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  background-color: var(--color-brand--3);
+  height: 20rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentWrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-grow: 1;
+  position: relative;
+  bottom: 10rem;
+  padding: 0 6.4rem;
+  @media screen and (max-width: 40rem) {
+    padding: 2.4rem;
+  }
+}
+
+.suspendedDiv {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 2.4rem;
+  border-radius: 0.5rem;
+  max-width: 60rem;
+  margin: 0 auto;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+}
+
+.uploadContainer form {
+  margin-top: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.downloadContainer {
+  padding: 6.4rem;
+  @media screen and (max-width: 40rem) {
+    padding: 2.4rem;
+  }
+}
+
+.downloads {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}

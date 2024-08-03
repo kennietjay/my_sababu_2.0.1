@@ -1,0 +1,70 @@
+/*  */
+.griefSupport {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  line-height: 1.6;
+
+  @media screen and (max-width: 40rem) {
+    padding: 2.4rem;
+  }
+}
+
+.supportCategory {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 4.8rem;
+  row-gap: 4.8rem;
+  margin-bottom: 2.4rem;
+  @media screen and (max-width: 60rem) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.griefSupportContainer header {
+  background-color: var(--color-brand--1);
+  color: #fff;
+  text-align: center;
+}
+
+.griefSupportContainer header div {
+  position: relative;
+}
+
+.backBtn {
+  position: absolute;
+  color: var(--color-text--1) !important;
+  cursor: pointer;
+  text-decoration: none;
+  left: 6.4rem;
+}
+
+.griefSupport .membersipCategory {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 0px 1px;
+  border-radius: 2rem;
+  padding: 2.4rem;
+  gap: 2.4rem;
+}
+
+.griefSupport section img {
+  width: 100%;
+  height: auto;
+  max-width: 35rem;
+  border-radius: 2rem;
+}
+
+.griefSupport .membersipCategory h2 {
+  font-weight: 600;
+  color: inherit;
+}
+
+@media screen and (max-width: 48rem) {
+  .griefSupport .membersipCategory {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    gap: 2.4rem;
+    padding: 2.4rem;
+  }
+}
