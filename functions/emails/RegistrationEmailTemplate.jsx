@@ -24,7 +24,16 @@ const RegistrationTemplate = ({
       us at sababufund@gmail.com.
     </p>
     <p>Best regards,</p>
-    <p>The Sababu Fund Team</p>
+    <p>
+      Sababu Fund Team
+      <br />
+      Sababu Fund Inc.
+      <br />
+      Email: sababufund@gmail.com
+      <br />
+      Visit us online:{" "}
+      <a href="http://www.sababufund.org">www.sababufund.org</a>
+    </p>
   </div>
 );
 

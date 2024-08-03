@@ -7,7 +7,7 @@ import {
   upperCase,
 } from "../../utils/utils";
 import EventSignup from "../components/EventSignup";
-import Button from "../components/Button";
+// import Button from "../components/Button";
 import { Alert } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 
@@ -135,7 +135,7 @@ const Events = ({
                           Sign up
                         </Button> */}
 
-                        <NavLink to="/contacts" className="ctaLink">
+                        <NavLink to="/contacts#top" className="ctaLink">
                           Sign up
                         </NavLink>
                       </div>

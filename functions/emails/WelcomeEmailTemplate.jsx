@@ -28,6 +28,16 @@ const Welcome = ({
       If you have any questions, feel free to reach out to us at{" "}
       {recipientEmail} or call us at {phone}.
     </p>
+    <p>
+      Sababu Fund Team
+      <br />
+      Sababu Fund Inc.
+      <br />
+      Email: sababufund@gmail.com
+      <br />
+      Visit us online:{" "}
+      <a href="http://www.sababufund.org">www.sababufund.org</a>
+    </p>
   </div>
 );
 
