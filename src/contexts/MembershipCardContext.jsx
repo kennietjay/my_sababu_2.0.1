@@ -62,7 +62,7 @@ const MembershipCardProvider = ({ children }) => {
 
     try {
       const { data: signups, error } = await supabase
-        .from("membership_cards_dev")
+        .from("membership_cards")
         .select("*");
 
       if (error) throw error;
@@ -78,7 +78,7 @@ const MembershipCardProvider = ({ children }) => {
 
     try {
       const { data: newSubscriber, error } = await supabase
-        .from("membership_cards_dev")
+        .from("membership_cards")
         .insert(formData);
 
       if (error) throw error;

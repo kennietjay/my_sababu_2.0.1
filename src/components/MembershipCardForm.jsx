@@ -164,7 +164,7 @@ const MembershipCardForm = ({
     try {
       const { data: existingSignups, error: existingSignupsError } =
         await supabase
-          .from("membership_cards_dev")
+          .from("membership_cards")
           .select("*")
           .or(`email.eq.${formData.email},phone.eq.${formData.phone}`);
 
