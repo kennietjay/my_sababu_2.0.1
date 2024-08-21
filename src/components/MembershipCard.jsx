@@ -37,6 +37,14 @@ function membershipCard() {
             </div>
           </div>
         </div>
+        <div className={styles.cardCost}>
+          <p>
+            Please pay for your card by Zelle to <br />
+            <strong> sababufund@gmail.com</strong> <br />
+            and contact the finance department at (571-577-3107) to update your
+            payment.
+          </p>
+        </div>
         {showSuccessMessage && (
           <Alert
             className={styles.alert}
@@ -53,7 +61,7 @@ function membershipCard() {
           onSuccess={handleSignupSuccess}
           setIsModalOpen={setIsModalOpen}
         />
-        <div className={""}>
+        <div>
           <button onClick={openModal} className={styles.signupBtn}>
             Sign Up
           </button>

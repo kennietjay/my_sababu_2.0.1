@@ -6,8 +6,11 @@
   align-items: center;
   height: calc(100vh - 7.2rem);
   border-radius: 2.4rem;
-  padding: 1rem;
+  padding: 6.8rem 1rem;
   background: linear-gradient(#b7d6ea, #ededed);
+  @media screen and (max-width: 40rem) {
+    padding: 3.6rem 1rem;
+  }
 }
 
 .sections {
@@ -15,11 +18,11 @@
   height: 100%;
   grid-template-columns: repeat(2, 1fr);
   gap: 2.8rem;
+  padding: 1.4rem;
   @media screen and (max-width: 40rem) {
     grid-template-columns: repeat(1, 1fr);
     gap: 0.2rem;
   }
-  padding: 1.4rem;
 }
 
 .bgImage img {
@@ -55,6 +58,18 @@
   border-radius: 0.5rem;
   max-width: 12rem;
   margin-bottom: 1rem;
+}
+
+.cardCost p {
+  margin-bottom: 2.4rem;
+  font-size: 1.4rem;
+  width: 80%;
+  margin: 0 auto 4.8rem;
+  text-align: center;
+
+  @media screen and (max-width: 40rem) {
+    margin: 1rem auto 1.8rem;
+  }
 }
 
 /* Alert */
