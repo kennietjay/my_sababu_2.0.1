@@ -24,9 +24,8 @@ const RegistrationTemplate = ({
       us at sababufund@gmail.com.
     </p>
     <p>Best regards,</p>
+    <p>Sababu Fund Team</p>
     <p>
-      Sababu Fund Team
-      <br />
       Sababu Fund Inc.
       <br />
       Email: sababufund@gmail.com

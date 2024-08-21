@@ -19,6 +19,9 @@ import ProfilePage from "./pages/ProfilePage";
 import Members from "./pages/Members";
 import MembershipCard from "./components/MembershipCard";
 import { MembershipCardProvider } from "./contexts/MembershipCardContext";
+import WelcomeNewsletter from "./components/Newsletters/WelcomeNewsletter";
+import SolidarityNewsletter from "./components/Newsletters/SolidarityNewsletter";
+import ForYouBlog from "./components/Newsletters/ForYouBlog";
 
 function App() {
   return (
@@ -47,6 +50,18 @@ function App() {
                     <Route
                       path="home/membership_card"
                       element={<MembershipCard />}
+                    />
+                    <Route
+                      path="home/newsletters/welcome"
+                      element={<WelcomeNewsletter />}
+                    />
+                    <Route
+                      path="home/newsletters/showing-solidarity"
+                      element={<SolidarityNewsletter />}
+                    />
+                    <Route
+                      path="home/newsletters/sababu-for-you"
+                      element={<ForYouBlog />}
                     />
                     <Route path="contacts" element={<Contact />} />
                   </Routes>

@@ -17,9 +17,8 @@ const ContactUsTemplate = ({
     <p>Details of your inquiry: {message}</p>
     <p>We appreciate your patience.</p>
     <p>Best regards,</p>
+    <p>Sababu Fund Team</p>
     <p>
-      Sababu Fund Team
-      <br />
       Sababu Fund Inc.
       <br />
       Email: sababufund@gmail.com

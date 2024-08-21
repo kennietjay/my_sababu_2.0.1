@@ -11,6 +11,7 @@ function NewsLetter() {
   const { loadSubscribers, createSubscriber } = useSubscriber();
   const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
+    name: "",
     email: "",
   });
   const [errorMsg, setErrorMsg] = useState(null);
@@ -29,7 +30,7 @@ function NewsLetter() {
     setErrorMsg(null);
     setLoading(false);
 
-    if (!formData.email) {
+    if (!formData.email || !formData.name) {
       setErrorMsg("All fields are required, full name and email.");
       return;
     }
@@ -50,11 +51,13 @@ function NewsLetter() {
     setLoading(true);
 
     const newSubscriber = {
+      name: formData.name,
       email: formData.email,
     };
 
     const emailData = {
       email: formData.email,
+      name: formData.name,
       emailSubject: "Newsletter Sign-Up Confirmation",
       type: "newsletter",
       templateData: {
@@ -83,7 +86,7 @@ function NewsLetter() {
       await submitNewsletterForm(emailData);
 
       //
-      setFormData({ email: "" });
+      setFormData({ name: "", email: "" });
     } catch (error) {
       setErrorMsg(error.message);
       setLoading(false);
@@ -107,6 +110,19 @@ function NewsLetter() {
                   {errorMsg}
                 </Alert>
               )}
+            </div>
+            <div className="inputControl">
+              <div>
+                <label htmlFor="name">Name</label>
+                <input
+                  type="name"
+                  id="name"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChangeInput}
+                  required
+                />
+              </div>
             </div>
             <div className="inputControl">
               <div>

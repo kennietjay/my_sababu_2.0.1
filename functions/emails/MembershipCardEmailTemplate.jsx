@@ -29,8 +29,8 @@ const MembershipCardTemplate = ({
     </p>
     <p>
       Your membership card is being processed and will be available for pickup
-      from any Sababu Fund exectuve member or mailed to you within 7-10 business
-      days. Please review the information you provided:
+      from any Sababu Fund exectuve member or mailed to you upon request. Please
+      review the information you provided:
     </p>
     <ul>
       <li>
@@ -60,9 +60,8 @@ const MembershipCardTemplate = ({
       difference.
     </p>
     <p>Warm regards,</p>
+    <p>Sababu Fund Team</p>
     <p>
-      Sababu Fund Team
-      <br />
       Sababu Fund Inc.
       <br />
       Email: sababufund@gmail.com

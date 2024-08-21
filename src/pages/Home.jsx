@@ -94,8 +94,6 @@ function Home() {
     setShowSuccessMessage(true);
   };
 
-  console.log(events);
-
   return (
     <main className={` ${styles.home}`}>
       <AppNav />

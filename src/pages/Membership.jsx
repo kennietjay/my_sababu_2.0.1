@@ -73,12 +73,12 @@ function HowItWorks() {
             <h3 className={`${"headingTertiary"}`}>Register</h3>
             <ul className={styles.stepList}>
               <li>
-                Acquire membership application form from Sababu Fund.
+                Obtain membership application form from Sababu Fund.
                 <HashLink
                   onClick={handleDownloadSingleFile}
                   className={`${"downloadLink"}`}
                 >
-                  Download form <i className="fa-solid fa-download"></i>
+                  Application form <i className="fa-solid fa-download"></i>
                 </HashLink>
                 {error && <p>Error: {error}</p>}
               </li>
@@ -462,7 +462,7 @@ function ApplicationRequirement() {
               <p>
                 Download the membership form here:{" "}
                 <HashLink onClick={handleDownloadSingleFile}>
-                  Membership form. <i className="fa-solid fa-download"></i>
+                  Application form. <i className="fa-solid fa-download"></i>
                 </HashLink>
               </p>
             </div>
@@ -555,7 +555,8 @@ function MembershipType() {
               <li className={styles.listException}>
                 Has dependent(s) such as
                 <ul className={styles.requirementSubList}>
-                  <li className={styles.listException}>Parent(s)/Relatives</li>
+                  <li className={styles.listException}>Parent(s)</li>
+                  <li className={styles.listException}>Relative(s)</li>
                   <li className={styles.listException}>Has children</li>
                 </ul>
               </li>
@@ -585,10 +586,11 @@ function MembershipType() {
               <li>Has social security number</li>
               <li>Is married</li>
               <li>
-                Has dependent(s) such as
+                Whether or not the applicant has dependents, such as
                 <ul className={styles.requirementSubList}>
-                  <li>Parent(s)/Relatives</li>
-                  <li>Has children</li>
+                  <li>Children</li>
+                  <li>Relative(s)</li>
+                  <li>Parent(s)</li>
                 </ul>
               </li>
             </ul>
@@ -618,8 +620,9 @@ function MembershipType() {
               <li>
                 Has dependent(s) such as
                 <ul className={styles.requirementSubList}>
-                  <li>Parent(s)/Relatives</li>
-                  <li>No children</li>
+                  <li>Children </li>
+                  <li>Parent(s)</li>
+                  <li>Relative(s)</li>
                 </ul>
               </li>
             </ul>
@@ -647,10 +650,11 @@ function MembershipType() {
               <li>Has social security number</li>
               <li>Married or not</li>
               <li>
-                Has dependent(s) such as
+                Whether or not the applicant has dependents, such as
                 <ul className={styles.requirementSubList}>
-                  <li>Parent(s)/Relatives</li>
-                  <li>No children</li>
+                  <li>Children</li>
+                  <li>Relative(s)</li>
+                  <li>Parent(s)</li>
                 </ul>
               </li>
             </ul>

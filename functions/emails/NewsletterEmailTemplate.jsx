@@ -18,9 +18,8 @@ const NewsletterTemplate = ({
       sababufund@gmail.com.
     </p>
     <p>Best regards,</p>
+    <p>Sababu Fund Team</p>
     <p>
-      Sababu Fund Team
-      <br />
       Sababu Fund Inc.
       <br />
       Email: sababufund@gmail.com
@@ -28,6 +27,8 @@ const NewsletterTemplate = ({
       Visit us online:{" "}
       <a href="http://www.sababufund.org">www.sababufund.org</a>
     </p>
+
+    <p></p>
   </div>
 );
 

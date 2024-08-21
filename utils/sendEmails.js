@@ -33,14 +33,13 @@ export const sendEmail = async (emailData) => {
 
 export const submitNewsletterForm = async (formData) => {
   const emailData = {
-    // firstName: formData.firstName,
-    // lastName: formData.lastName,
+    name: formData.name,
     email: formData.email,
     emailSubject: "Newsletter Sign-Up Confirmation",
     type: "newsletter",
     templateData: {
       subscriptionDate: new Date().toLocaleDateString(),
-      newsletterLink: "https://example.com/newsletter",
+      newsletterLink: "https://sababufund.org/home/newsletters/welcome",
     },
   };
 

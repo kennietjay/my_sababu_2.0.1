@@ -28,9 +28,9 @@ const EventSignup = ({
       If you have any questions, feel free to reach out to us at{" "}
       {recipientEmail} or call us at {phone}.
     </p>
+    <p>Best regards,</p>
+    <p>Sababu Fund Team</p>
     <p>
-      Sababu Fund Team
-      <br />
       Sababu Fund Inc.
       <br />
       Email: sababufund@gmail.com

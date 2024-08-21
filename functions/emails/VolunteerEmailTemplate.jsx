@@ -20,9 +20,8 @@ const VolunteerTemplate = ({
     </p>
     <p>If you have any questions, please reply to this email.</p>
     <p>Best regards,</p>
+    <p>Sababu Fund Team</p>
     <p>
-      Sababu Fund Team
-      <br />
       Sababu Fund Inc.
       <br />
       Email: sababufund@gmail.com
